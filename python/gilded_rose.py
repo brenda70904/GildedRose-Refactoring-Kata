@@ -49,11 +49,10 @@ class GildedRose(object):
             if item.name == "Aged Brie":
                 self.update_aged_brie(item)
                 continue
-            elif item.name == "Backstage passes to a TAFKAL80ETC concert":
+            if item.name == "Backstage passes to a TAFKAL80ETC concert":
                 self.update_backstage_passes(item)
                 continue
-            elif item.name == "Sulfuras, Hand of Ragnaros":
+            if item.name == "Sulfuras, Hand of Ragnaros":
                 continue
-            else:
-                self.update_normal_item(item)
+            self.update_normal_item(item)
 
